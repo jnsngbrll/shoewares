@@ -13,11 +13,11 @@ export const Footer = () => {
             <img src={nikeLogo} alt="" className="w-[50px]" />
           </div>
           {FooterData.map((FootData) => (
-            <div className="flex flex-col gap-2">
+            <div className="space-y-2">
               <h1 className="text-xs font-bold text-[--primary]">
                 {FootData.title}
               </h1>
-              <div className="flex flex-col gap-1">
+              <div className="space-y-1">
                 {FootData.contents.map((content) => (
                   <p className="text-xs text-[--accent] cursor-pointer hover:text-[--secondary]">
                     {content.label}
@@ -26,8 +26,8 @@ export const Footer = () => {
               </div>
             </div>
           ))}
-          <div className="flex flex-col gap-4">
-            <div className="flex flex-col gap-2">
+          <div className="space-y-4">
+            <div className="space-y-2">
               <h1 className="text-xs font-bold text-[--primary]">Socials</h1>
               <div className="flex gap-4 text-[--accent]">
                 <FaFacebook />
@@ -36,12 +36,12 @@ export const Footer = () => {
                 <FaTwitter />
               </div>
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="space-y-2">
               <h1 className="text-xs font-bold text-[--primary]">Message</h1>
               <div className="relative flex items-center">
                 <input
                   type="text"
-                  className="w-full text-xs p-2 border outline-none"
+                  className="w-full text-xs py-2 pl-2 pr-8 border outline-none"
                 />
                 <button className="absolute right-0 p-1 text-black border-l border-black">
                   <IoIosSend />
