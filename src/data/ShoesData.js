@@ -14,7 +14,7 @@ import c10 from '../assets/c10.png';
 import c11 from '../assets/c11.png';
 import c12 from '../assets/c12.png';
 
-export const Shoes = [
+export const ShoesData = [
   {
     title: 'Top Collections',
     items: [

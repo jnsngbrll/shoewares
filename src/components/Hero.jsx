@@ -6,7 +6,7 @@ import t3 from '../assets/t3.png';
 
 export const Hero = () => {
   const [currentImage, setCurrentIndex] = useState(0);
-  const heroImages = [t1, t2, t3];
+  const heroImages = [t3, t2, t1];
 
   const prev = () => {
     setCurrentIndex((prevIndex) =>
@@ -21,10 +21,14 @@ export const Hero = () => {
   };
 
   return (
-    <div className="h-[80vh] flex items-center justify-center relative">
+    <div className="py-60 flex items-center justify-center relative">
       <div className="flex items-center w-full">
         <div className="flex flex-col items-center relative">
-          <img src={heroImages[currentImage]} alt="" className="-rotate-45" />
+          <img
+            src={heroImages[currentImage]}
+            alt=""
+            className="-rotate-45 drop-shadow-2xl w-[530px] h-[300px]"
+          />
           <div className="absolute bottom-[-5rem] flex gap-3">
             {heroImages.map((_, heroImageIndex) => (
               <div
@@ -77,7 +81,7 @@ export const Hero = () => {
         </button>
       </div>
       <div className="absolute w-full flex justify-between bottom-0 text-sm font-semibold">
-        <p>shoewares.</p>
+        <p>Shoewares.</p>
         <p>Free shipping on all orders</p>
       </div>
     </div>
