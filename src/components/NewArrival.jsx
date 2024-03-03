@@ -7,7 +7,7 @@ export const NewArrival = () => {
     <div>
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold">New Arrial</h1>
+          <h1 className="text-2xl font-bold">New Arrivals</h1>
           <hr className="bg-[#78281F] h-1 w-[30%] rounded-full" />
         </div>
       </div>

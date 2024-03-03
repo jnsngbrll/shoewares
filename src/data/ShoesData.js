@@ -35,9 +35,9 @@ export const ShoesData = [
       { name: 'Dunk Low', img: c7, price: 1700, type: 'New Arrival' },
       { name: 'Dunk Low', img: c8, price: 1700, type: 'New Arrival' },
       { name: 'Dunk Low', img: c9, price: 1700, type: 'New Arrival' },
-      { name: 'Dunk Low', img: c10, price: 170, type: 'New Arrival' },
-      { name: 'Dunk Low', img: c11, price: 170, type: 'New Arrival' },
-      { name: 'Dunk Low', img: c12, price: 170, type: 'New Arrival' },
+      { name: 'Dunk Low', img: c10, price: 1700, type: 'New Arrival' },
+      { name: 'Dunk Low', img: c11, price: 1700, type: 'New Arrival' },
+      { name: 'Dunk Low', img: c12, price: 1700, type: 'New Arrival' },
     ],
   },
 ];

@@ -27,7 +27,7 @@ export const Hero = () => {
           <img
             src={heroImages[currentImage]}
             alt=""
-            className="-rotate-45 drop-shadow-2xl w-[530px] h-[300px]"
+            className="rotate-[-40deg] drop-shadow-2xl w-[530px] h-[300px]"
           />
           <div className="absolute bottom-[-5rem] flex gap-3">
             {heroImages.map((_, heroImageIndex) => (
