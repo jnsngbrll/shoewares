@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShoesData } from '../data/ShoesData';
+import { ProductsData } from '../data/ProductsData';
 
 export const TopCollections = () => {
   return (
@@ -10,7 +10,7 @@ export const TopCollections = () => {
       </div>
       <div className="mt-20 w-full h-[200px] flex justify-center p-4 bg-[--secondary] relative">
         <div className="absolute top-[-3rem] flex gap-8">
-          {ShoesData[0].items.map((item, itemIndex) => (
+          {ProductsData[0].items.map((item, itemIndex) => (
             <img
               key={itemIndex}
               src={item.img}

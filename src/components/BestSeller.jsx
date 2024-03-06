@@ -1,6 +1,6 @@
 import React from 'react';
-import { ShoesData } from '../data/ShoesData';
-import { Shoe } from './Shoe';
+import { ProductsData } from '../data/ProductsData';
+import { Product } from './Product';
 
 export const BestSeller = () => {
   return (
@@ -12,8 +12,8 @@ export const BestSeller = () => {
         </div>
       </div>
       <div className="mt-10 grid grid-cols-4 gap-4">
-        {ShoesData[1].items.map((item, itemIndex) => (
-          <Shoe key={itemIndex} shoeData={item} />
+        {ProductsData[1].items.map((item, itemIndex) => (
+          <Product key={itemIndex} productData={item} />
         ))}
       </div>
     </div>

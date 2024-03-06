@@ -12,14 +12,17 @@ export const Footer = () => {
           <div>
             <img src={nikeLogo} alt="" className="w-[50px]" />
           </div>
-          {FooterData.map((FootData) => (
-            <div className="space-y-2">
+          {FooterData.map((FootData, idx) => (
+            <div key={idx} className="space-y-2">
               <h1 className="text-xs font-bold text-[--primary]">
                 {FootData.title}
               </h1>
               <div className="space-y-1">
-                {FootData.contents.map((content) => (
-                  <p className="text-xs text-[--accent] cursor-pointer hover:text-[--secondary]">
+                {FootData.contents.map((content, idx) => (
+                  <p
+                    key={idx}
+                    className="text-xs text-[--accent] cursor-pointer hover:text-[--secondary]"
+                  >
                     {content.label}
                   </p>
                 ))}
