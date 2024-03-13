@@ -8,12 +8,12 @@ export const Product = ({ productData }) => {
         <img
           src={productData.img}
           alt=""
-          className="w-[200px] h-[100px] -rotate-45 group-hover:rotate-0 drop-shadow-2xl"
+          className="w-[200px] h-[100px] rotate-[-40deg] group-hover:rotate-0 drop-shadow-2xl"
         />
       </div>
-      <h1 className="text-sm font-semibold">{productData.name}</h1>
+      <h1 className="text-sm font-semibold line-clamp-1">{productData.name}</h1>
       <p className="text-sm text-[#78281F] font-semibold">
-        ₱{productData.price.toLocaleString()}
+        ₱{productData.price.toLocaleString()} PHP
       </p>
     </div>
   );
